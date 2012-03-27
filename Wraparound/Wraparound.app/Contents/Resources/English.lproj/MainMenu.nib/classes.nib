@@ -1,0 +1,40 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                setCPUUsage = id; 
+                setCornerRange = id; 
+                setDisableInCorners = id; 
+                setJumpAxes = id; 
+                setRunningState = id; 
+                setShouldDisplayStatusItem = id; 
+                setShouldShowWindowAtLaunch = id; 
+                showWindow = id; 
+                start = id; 
+                stop = id; 
+            }; 
+            CLASS = DCWrap; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                disableCornerCheck = NSButton; 
+                disableCornerLabel = NSTextField; 
+                disableCornerRange = NSTextField; 
+                disableCornerStep = NSStepper; 
+                displayIconCheck = NSButtonCell; 
+                displayMenuItem = NSMenuItem; 
+                horCheck = NSButtonCell; 
+                reduceCPUCheck = NSButton; 
+                sMenu = NSMenu; 
+                showWindowCheck = NSButtonCell; 
+                startButton = NSButton; 
+                startStopMenuItem = NSMenuItem; 
+                status = NSTextField; 
+                verCheck = NSButtonCell; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

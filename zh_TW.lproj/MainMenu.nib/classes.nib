@@ -1,0 +1,39 @@
+{
+    IBClasses = (
+        {
+            CLASS = DCValueToRunningStateTransformer; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSValueTransformer; 
+        }, 
+        {
+            ACTIONS = {
+                addAppToList = id; 
+                chooseWrapEdges = id; 
+                removeAppFromList = id; 
+                showWindow = id; 
+                toggleWrapping = id; 
+            }; 
+            CLASS = DCWrap; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                apps = NSArrayController; 
+                helpView = WebView; 
+                negativeEdge = NSPopUpButton; 
+                positiveEdge = NSPopUpButton; 
+                sMenu = NSMenu; 
+                window = NSWindow; 
+                wrapEdges = NSSegmentedControl; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {"" = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = NSSegmentedControl; LANGUAGE = ObjC; SUPERCLASS = NSControl; }, 
+        {CLASS = NSValueTransformer; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
