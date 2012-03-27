@@ -1,0 +1,57 @@
+Components:
+
+Primary MVC {
+	Wrapper - Controller class that actually moves the cursor
+
+	Screen - Model class that provides information about screen layout (specifically, outer edges)
+
+	WrapView - View class that exists to grab mousemoved events at screen edges
+}
+
+Preferences MVC {
+
+	[NSUserDefaults - Model class that provides data storage and retrieval of preferences]
+
+	PreferencesViewController - Controller class that manages preferences
+
+	WrapSelectorView - Custom view that displays logical screen arrangement and allows edge selection
+
+
+	Login Item MVC {
+
+		[NSButton - View (checkbox) in preferences dialog]
+	
+		LoginItemsController - Controller class that Adds/removes/checks membership in login items
+
+		LoginItemsList - Model class representing the Login Items list
+
+	}
+
+	
+
+}
+
+Status Meu MVC {
+
+	[NSStatusBarItem - View class that displays the application's status item]
+
+	StatusItemController - Controller class that handles showing/hiding status item and status menu actions
+
+	BOOL shouldDisplayStatusItem - Model
+
+}
+
+Behavioral Values:
+	(float) corner avoidance distance - Prefs
+	(BOOL) Master on/off switch (Must be On to wrap) - Status Menu
+	(BOOL) Hidden on/off switch (Must be On to wrap) - Primary
+	(int) "never" hotkey (Overrides everything) - Prefs
+	(int) "always" hotkey (Overrides wrapping edges and application list only) - Prefs
+	(BOOL) application list pos/neg - Prefs
+	(Array) hot application list - Prefs
+	(Array) wrapping edges - Prefs
+
+Other Values:
+	(BOOL) status item visible - Prefs
+	(BOOL) launch at login - Prefs
+
